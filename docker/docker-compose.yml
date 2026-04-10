@@ -1,0 +1,25 @@
+# =============================================================================
+# docker-compose.yml - OpenSTA Workshop
+# =============================================================================
+# Simplifies building and running the OpenSTA container.
+#
+# Usage:
+#   docker compose build       # Build the image
+#   docker compose run opensta  # Start interactive session
+# =============================================================================
+
+version: '3.8'
+
+services:
+  opensta:
+    build:
+      context: .
+      dockerfile: Dockerfile.linux
+    image: opensta-workshop:latest
+    container_name: opensta-workshop
+    stdin_open: true     # Keep STDIN open (-i flag)
+    tty: true            # Allocate a pseudo-TTY (-t flag)
+    volumes:
+      # Mount the entire workshop directory into /workspace
+      - ../:/workspace
+    working_dir: /workspace
