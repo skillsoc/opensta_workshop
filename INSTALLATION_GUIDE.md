@@ -368,7 +368,7 @@ If you haven't already obtained the workshop files:
 
 ```bash
 # On your host machine (or inside WSL2 terminal)
-git clone <WORKSHOP_REPO_URL> opensta_workshop
+git clone https://github.com/skillsoc/opensta_workshop.git
 cd opensta_workshop
 ```
 
