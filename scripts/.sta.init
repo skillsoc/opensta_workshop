@@ -1,0 +1,5 @@
+if { ![catch {package require tclreadline}] } {
+  proc tclreadline::prompt1 {} {
+    return "> "
+  }
+}

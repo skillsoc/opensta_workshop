@@ -1,0 +1,41 @@
+import subprocess
+
+# Define the library paths for each corner
+LIBS = {
+    "slow": "/path/to/slow.lib",
+    "typical": "/path/to/typical.lib",
+    "fast": "/path/to/fast.lib",
+}
+
+# Define the corners for STA with their corresponding libraries
+CORNERS = {
+    "SS_0.9V_125C": LIBS["slow"],
+    "TT_1.0V_25C": LIBS["typical"],
+    "FF_1.1V_-40C": LIBS["fast"],
+    "TT_1.0V_100C": LIBS["typical"],
+}
+
+# Path to the STA script
+STA_SCRIPT = "/path/to/sta_script.tcl"
+
+def task_sta():
+    """
+    A doit task to fire openSTA runs for different corners in parallel terminals.
+    """
+    for corner, lib_path in CORNERS.items():
+        yield {
+            'name': f"sta_{corner}",
+            'actions': [
+                lambda corner=corner, lib_path=lib_path: subprocess.Popen(
+                    [
+                        "gnome-terminal",  # Use 'gnome-terminal' for Linux
+                        "--",
+                        "bash",
+                        "-c",
+                        f"opensta -f {STA_SCRIPT} -set lib {lib_path} -set corner {corner}; exec bash"
+                    ]
+                )
+            ],
+            'verbosity': 2,
+        }
+
