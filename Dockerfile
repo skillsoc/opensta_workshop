@@ -142,8 +142,8 @@ WORKDIR /workspace
 RUN git clone https://github.com/skillsoc/opensta_workshop.git
 
 # Install Micro via the official shell script
-RUN curl https://getmic.ro | bash && mv micro /usr/local/bin/
 RUN apt-get update && apt-get install -y vim && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y nano && rm -rf /var/lib/apt/lists/*
 
 RUN echo "alias sta='source /workspace/opensta_workshop/scripts/sta.csh'" >> /root/.bashrc
 
