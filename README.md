@@ -1,8 +1,8 @@
 OpenSTA Workshop
-Welcome to the OpenSTA Workshop by. This repository provides a containerized environment to learn and practice Static Timing Analysis (STA) using OpenSTA, the industry-standard open-source timing engine.
+Welcome to the **OpenSTA Workshop**. This repository provides a containerized environment to learn and practice **Static Timing Analysis (STA) using OpenSTA**, a open-source timing engine which is as good as a industrial timing signoff engine.
 
-Table of Contents
-Prerequisites
+## Table of Contents
+* [Prerequisites](#Prerequisites)
 
 Installation
 
@@ -16,7 +16,7 @@ Docker Usage Guide
 
 Running OpenSTA
 
-Prerequisites
+## Prerequisites
 Before starting, ensure you have a terminal environment ready. We recommend a Linux-based environment.
 
 1. Windows Users: WSL2 Setup
@@ -77,5 +77,3 @@ cd opensta_workshop
 sta
 You are now ready to run STA commands and scripts!
 
-About SkillSOC
-SkillSOC Technologies is dedicated to providing hands-on training and design services in the VLSI and semiconductor domain.
