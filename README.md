@@ -22,30 +22,11 @@ If you are on a Windows laptop, you must install the Windows Subsystem for Linux
 
 Open PowerShell as Administrator.
 
-Run the command in **PowerShell**:
-```powershell
-wsl --install
-```
-### Why you don't see the label:
-1. **Syntax Highlighting:** The label `powershell` is used for "Syntax Highlighting." If you were writing a long script, it would make variables one color, strings another, and commands a third color.
-2. **Clean Look:** Markdown assumes that if the code is inside a block, the reader just wants the code itself. Most platforms (like GitHub) don't display the language name in the corner of the box unless you use a specific theme or plugin.
 
-### Pro-Tip for your SkillSOC Workshop:
-Since your students will be switching between Windows (PowerShell) and Linux (Bash), it’s a great idea to be very explicit in your text. 
-
-For example:
 > **On Windows (PowerShell):**
 > ```powershell
 > wsl --install
 > ```
-> 
-> **Once inside Linux (Bash):**
-> ```bash
-> sudo apt-get update
-> ```
-
-This prevents students from trying to run Linux commands in PowerShell or vice-versa!
-Restart your computer if prompted.
 
 ## Docker Installation
 Once logged into your Linux/WSL2 environment, install Docker:
