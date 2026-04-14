@@ -5,7 +5,8 @@ Welcome to the **OpenSTA Workshop**. This repository provides a containerized en
 * [Prerequisites](#Prerequisites)
 * [Installation](#Prerequisites)
   * [Windows Users: WSL2 Setup](#windows-users-wsl2-setup)
-  * [Docker Installation](#Docker_Installation)
+  * [Docker Installation](#docker-installation)
+  
 
 Getting Started
 
@@ -27,7 +28,7 @@ PowerShell
 wsl --install
 Restart your computer if prompted.
 
-## 2. Docker Installation
+## Docker Installation
 Once logged into your Linux/WSL2 environment, install Docker:
 
 Bash
