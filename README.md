@@ -52,28 +52,34 @@ Docker Usage Guide
 Start a new container
 To launch a fresh container and enter the interactive terminal:
 
-Bash
+```bash
 docker run -it skillsoc:latest
+```
+
 Manage existing containers
 To list all containers (including stopped ones):
 
-Bash
+```bash
 docker ps -a
+```
 To restart and enter a container that was previously created:
 
-Bash
+```bash
 # Start the container
 docker start <container_name>
 
 # Attach to the running container
 docker exec -it <container_name> bash
+```
 (Note: Use the name found in the "NAMES" column of docker ps -a)
 
 Running OpenSTA
 Once inside the Docker container, navigate to the workshop directory and launch the timing tool:
 
-Bash
+```bash
 cd opensta_workshop
 sta
+```
 You are now ready to run STA commands and scripts!
 
+Lets get started
