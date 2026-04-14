@@ -22,7 +22,7 @@ If you are on a Windows laptop, you must install the Windows Subsystem for Linux
 
 Open PowerShell as Administrator.
 
-Run the command:
+Run the command in **PowerShell**:
 ```powershell
 wsl --install
 ```
