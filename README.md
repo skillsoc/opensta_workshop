@@ -31,21 +31,23 @@ Open PowerShell as Administrator.
 ## Docker Installation
 Once logged into your Linux/WSL2 environment, install Docker:
 
-Bash
+```bash
 sudo apt-get update
 sudo apt-get install docker.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
+```
 Installation
 Clone the repository and build the Docker image:
 
-Bash
+```bash
 # Clone the repo
 git clone https://github.com/skillsoc/opensta_workshop.git
 cd opensta_workshop
 
 # Build the docker image
 docker build -t skillsoc .
+```
 Docker Usage Guide
 Start a new container
 To launch a fresh container and enter the interactive terminal:
