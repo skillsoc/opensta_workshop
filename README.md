@@ -1,20 +1,81 @@
-how to install wsl2 on windows laptops
-<create a simple video or give a link to youtube video>
-how to install docker once they login to linux
-.
-.
+OpenSTA Workshop
+Welcome to the OpenSTA Workshop by. This repository provides a containerized environment to learn and practice Static Timing Analysis (STA) using OpenSTA, the industry-standard open-source timing engine.
 
-git clone <workshop> .
+Table of Contents
+Prerequisites
+
+Installation
+
+1. Windows Users: WSL2 Setup
+
+2. Docker Installation
+
+Getting Started
+
+Docker Usage Guide
+
+Running OpenSTA
+
+Prerequisites
+Before starting, ensure you have a terminal environment ready. We recommend a Linux-based environment.
+
+1. Windows Users: WSL2 Setup
+If you are on a Windows laptop, you must install the Windows Subsystem for Linux (WSL2):
+
+Open PowerShell as Administrator.
+
+Run the command:
+
+PowerShell
+wsl --install
+Restart your computer if prompted.
+
+2. Docker Installation
+Once logged into your Linux/WSL2 environment, install Docker:
+
+Bash
+sudo apt-get update
+sudo apt-get install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+Installation
+Clone the repository and build the Docker image:
+
+Bash
+# Clone the repo
+git clone https://github.com/skillsoc/opensta_workshop.git
 cd opensta_workshop
+
+# Build the docker image
 docker build -t skillsoc .
+Docker Usage Guide
+Start a new container
+To launch a fresh container and enter the interactive terminal:
 
-to list all the docker containers present
-docker ps -a
-
+Bash
 docker run -it skillsoc:latest
-if the docker is already runing anything shown in docker ps -a
-docker -it start <container_name> container name is the name in column "NAMES"
+Manage existing containers
+To list all containers (including stopped ones):
 
+Bash
+docker ps -a
+To restart and enter a container that was previously created:
+
+Bash
+# Start the container
+docker start <container_name>
+
+# Attach to the running container
+docker exec -it <container_name> bash
+(Note: Use the name found in the "NAMES" column of docker ps -a)
+
+Running OpenSTA
+Once inside the Docker container, navigate to the workshop directory and launch the timing tool:
+
+Bash
 cd opensta_workshop
 sta
+You are now ready to run STA commands and scripts!
 
+About SkillSOC
+SkillSOC Technologies is dedicated to providing hands-on training and design services in the VLSI and semiconductor domain.
