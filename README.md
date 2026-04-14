@@ -3,12 +3,9 @@ Welcome to the **OpenSTA Workshop**. This repository provides a containerized en
 
 ## Table of Contents
 * [Prerequisites](#Prerequisites)
-
-Installation
-
-1. Windows Users: WSL2 Setup
-
-2. Docker Installation
+* [Installation](#Prerequisites)
+  * [1. Windows Users: WSL2 Setup](#1. Windows Users: WSL2 Setup)
+  * [Docker Installation](#2. Docker Installation)
 
 Getting Started
 
@@ -19,7 +16,7 @@ Running OpenSTA
 ## Prerequisites
 Before starting, ensure you have a terminal environment ready. We recommend a Linux-based environment.
 
-1. Windows Users: WSL2 Setup
+## 1. Windows Users: WSL2 Setup
 If you are on a Windows laptop, you must install the Windows Subsystem for Linux (WSL2):
 
 Open PowerShell as Administrator.
@@ -30,7 +27,7 @@ PowerShell
 wsl --install
 Restart your computer if prompted.
 
-2. Docker Installation
+## 2. Docker Installation
 Once logged into your Linux/WSL2 environment, install Docker:
 
 Bash
