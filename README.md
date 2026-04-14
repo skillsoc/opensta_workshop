@@ -4,8 +4,8 @@ Welcome to the **OpenSTA Workshop**. This repository provides a containerized en
 ## Table of Contents
 * [Prerequisites](#Prerequisites)
 * [Installation](#Prerequisites)
-  * [1. Windows Users: WSL2 Setup](#1. Windows Users: WSL2 Setup)
-  * [Docker Installation](#2. Docker Installation)
+  * [1. Windows Users: WSL2 Setup](#WSL2_Setup)
+  * [Docker Installation](#Docker_Installation)
 
 Getting Started
 
