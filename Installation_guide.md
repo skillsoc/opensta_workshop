@@ -298,6 +298,8 @@ If you see "Hello from Docker!", Docker is correctly integrated with WSL2.
 
 Inside your **WSL2 Ubuntu terminal**:
 
+git clone https://github.com/skillsoc/opensta_workshop.git
+
 ```bash
 cd ~/opensta_workshop
 
