@@ -22,6 +22,8 @@ If you are on a Windows laptop, you must install the Windows Subsystem for Linux
 
 Open PowerShell as Administrator.
 
+watch this guide to install wsl on windows
+https://www.youtube.com/watch?v=J8cy6MDkacI
 
 > **On Windows (PowerShell):**
 > ```powershell
