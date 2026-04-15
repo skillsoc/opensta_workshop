@@ -6,7 +6,20 @@ Welcome to the **OpenSTA Workshop**. This repository provides a containerized en
 * [Installation](#Prerequisites)
   * [Windows Users: WSL2 Setup](#windows-users-wsl2-setup)
   * [Docker Installation](#docker-installation)
-  
+
+
+| Requirement | Minimum | Recommended |
+|---|---|---|
+| **RAM** | 4 GB | 8 GB or more |
+| **Disk space** | 5 GB free | 10 GB free |
+| **CPU** | Any 64-bit x86 processor | Multi-core (speeds up the build) |
+| **OS (Linux)** | Ubuntu 20.04 / Debian 11 | Ubuntu 22.04+ |
+| **OS (Windows)** | Windows 10 version 22H2 | Windows 11 |
+| **Internet** | Required during build | Required during build |
+
+
+> **Note:** Hardware virtualisation (VT-x / AMD-V) must be **enabled in your BIOS/UEFI**. Most modern machines have it on by default, but if Docker fails to start, this is the first thing to check.
+
 
 Getting Started
 
