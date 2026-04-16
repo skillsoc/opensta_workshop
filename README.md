@@ -38,6 +38,8 @@ Open PowerShell as Administrator.
 watch this guide to install wsl on windows
 https://www.youtube.com/watch?v=J8cy6MDkacI
 
+**do not install ubuntu from windows store use only wsl**
+
 > **On Windows (PowerShell):**
 > ```powershell
 > wsl --install
