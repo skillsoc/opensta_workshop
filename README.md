@@ -46,6 +46,8 @@ https://www.youtube.com/watch?v=J8cy6MDkacI
 ## Docker Installation
 Once logged into your Linux/WSL2 environment, install Docker:
 
+check out this video to understand better : https://workdrive.zohoexternal.in/external/47bca38d1446abc3daf47d65f496a98778e929d02dd77a62b3159bf4d437b7b5
+
 ```bash
 sudo apt-get update
 sudo apt-get install docker.io -y
